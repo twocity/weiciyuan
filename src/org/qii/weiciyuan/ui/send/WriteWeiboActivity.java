@@ -661,6 +661,7 @@ public class WriteWeiboActivity extends AbstractAppActivity implements DialogInt
     }
 
     private void showPic() {
+    	//TODO read local photo with EXIF info.
         Intent intent = new Intent(WriteWeiboActivity.this, BrowserLocalPicActivity.class);
         intent.putExtra("path", picPath);
         startActivityForResult(intent, BROWSER_PIC);
